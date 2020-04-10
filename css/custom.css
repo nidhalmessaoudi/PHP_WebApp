@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Mountains+of+Christmas&display=swap");
+:root{
+  --first-color: 	#0000ff;
+  --second-color: #aaa69d; 
+}
+a,a:hover{
+  text-decoration: none;
+}
+body{
+  background: #f3f3f3;
+  font-family: janna lt;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Janna lt;
+}
+
+.wrapper .multi_color_border{
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #000fff 0% , #000fff 25%, #494949 25%, #494949 50%, #000fff 50%, #000fff 75%, #494949 75%, #494949 100%);
+}
+
+.wrapper .top_nav{
+  margin-top: 0;
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav.navbar {
+  background: var(--first-color) !important;
+  color: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+nav.navbar .search-box{
+  margin-top: 20px;
+  transform: translate(-50%,-50%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding:0px;
+}
+nav.navbar .search-box > .search-txt{
+  width: 150px;
+  padding: 0 6px;
+}
+nav.navbar .search-btn{
+  color: #000fff;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav.navbar .search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+/* Start content */
+.content{
+    margin-top: 60px;
+}
+.content .post{
+    text-align: center;
+    background: #FFF;
+    padding: 20px 22px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 30px;
+}
+.post .post-image{
+    width: 100%;
+}
+.post .post-image img{
+    width: 100%;
+    height: 290px;
+}
+.post .post-title{
+    margin: 10px 0;
+}
+.post .post-details button.btn-custom{
+    background: transparent;
+    color: var(--first-color);
+    border: 1px solid var(--first-color);
+    border-radius: 0;
+    font-size: 16px;
+    width: 110px !important;
+    margin-bottom: 10px !important;
+}
+.post .post-details button.btn-custom.hover{
+    background: var(--first-color);
+    color: #FFF;
+}
+.post .post-details .post-info{
+    color: var(--second-color);
+}
+.post .post-details .post-info span{
+    margin-left: 10px;
+}
+.post .post-details .post-info span , i{
+    margin-left: 5px;
+    
+}
+/* End content */
+/* Start Side Bar */
+.categories{
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+.categories h4{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--second-color);
+}
+.categories ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.categories ul li{
+    background: var(--first-color);
+    margin-bottom: 3px;
+    padding: 5px;
+    border-radius: 2px;
+}
+.categories ul li:hover{
+    background: var(--second-color);
+    transition: all 0.3 ease-in-out;
+}
+.categories ul li a{
+    color: #FFF;
+} 
+.last-posts{
+    background: #FFF;
+    border: 1px solid #eaeaea;
+    padding: 20px 10px;
+}
+.last-posts h4{
+    text-align: center;
+}
+.last-posts ul{
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+.last-posts ul li{
+    border-bottom: 1px solid var(--second-color);
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+.last-posts ul li:first-child{
+    border-top: 1px solid var(--second-color) ;
+}
+.last-posts ul li:last-child{
+    border-bottom: 0;
+}
+.last-posts ul li .span-image{
+    float: right;
+    margin-left: 10px;
+}
+.last-posts ul li .span-image img{
+    width: 80px;
+    height: 60px;
+}
+.last-posts ul li a{
+    color: var(--first-color);
+}
+.last-posts ul li a:hover{
+    color: var(--second-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* End Side Bar*/
+footer{
+    background: var(--first-color);
+    color: #fff;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .s-m a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: #000fff;
+  color: white;
+  margin: 0 6px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  font-size: 22px;
+}
+footer .s-m a:hover{
+  background: #e67e22;
+}
+footer .s-m a i{
+  transition: 0.4s all;
+}
+footer .s-m a:hover > i{
+  transform: scale(1.6) rotate(25deg);
+}
